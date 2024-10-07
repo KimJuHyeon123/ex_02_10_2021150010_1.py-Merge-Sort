@@ -1,0 +1,49 @@
+words = [
+
+    '본인학번', 'hut', 'apostle', 'equipment', 'fop', 'refined', 'parapet', 'mog', 'amputate', 'covetous', 'somebody', 
+
+  'all', 'lobbyist', 'remark', 'subscriber', 'quorum', 'steppe', 'clean', 'cu', 'commend', 'prosy',
+
+  'supererogation', 'indignation', 'wolverine', 'emporium', 'intersect', 'constitution', 'miscast', 'rabbi', 'enmity', 'loft',
+
+  'temporize', 'speedboat', 'agenda', 'delusion', 'class04', 'idolize', 'romance', 'overestimate', 'revive', 'smell', 
+
+  'modem', 'splat', 'snaky', 'drawn', 'smoke', 'darky', 'lotus', 'mufti', 'pithy', 'jewel', 'nexus',
+
+  'fluff', 'piton', 'finis', 'drake', 'caulk', 'pussy', 'bless', 'weeds', 'realm', 'swoon', 'thorn', 
+
+  'plant', 'aorta', 'cupid', 'wafer', 'jewry', 'sinus', 'proud', 'grape', 'cable', 'carer', 'pearl', 
+
+  'piece', 'party', 'sleet', 'palmy', 'oiled', 'synod', 'trove', 'voice', 'chest', 'story', 'range', 
+
+  'scout', 'sewer', 'lowly', 'usher', 'seine', 'gulch', 'fever', 'frith', 'pylon', 'wager', 'banns', 
+
+  'merit', 'cheap', 'booby', 'truss', 'codex', 'sepia', 'totem', 'poult', 'dregs', 'giddy', 'umber', 
+
+  'mooch', 'smarm', 'loath', 'spoil', 'drink', 'wrick', 'awake', 'mural', 'glide', 'pinch', 'thine', 
+
+  'tawny', 'swede', 'shier', 'satan', 'triad', 'splay', 'tacit', 
+
+]
+
+def insertionSort(arr, start, end):
+    pass
+
+def mergeSort(arr, start, end): # end = inclusive
+    size = end - start + 1
+    if size <= 5:
+        insertionSort(arr, start, end)
+        return
+    mid = (start + end) // 2
+    mergeSort(arr, start, mid)
+    mergeSort(arr, mid+1, end)
+    merge(arr, start, mid, end)
+
+def merge(arr, start, mid, end): # = end = inclusive, mid = left subarray
+    #left_array = arr[start : mid + 1]
+    #right_array = arr[mid+1 : end + 1]
+    pass
+
+mergeSort(words, 0, len(words) - 1)
+
+print(words)
